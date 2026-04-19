@@ -21,7 +21,8 @@ pipeline {
         }
         stage('Test'){
             steps {
-                sh "test -e index.html" 
+                sh '''test -e index.html
+                '''
             }
         }
     }
